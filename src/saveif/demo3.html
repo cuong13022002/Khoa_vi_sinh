@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt động</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  .show {
+  display: block;
+}
+</style>
+</head>
+  <body class=" bg-amber-100">
+
+    <header class="fixed top-0 w-full">
+      <div class="bg-[#4B872A] lg:h-[40px] px-3 z-20 ">
+
+          <div class="xl:w-[1170px] mx-auto ">
+
+              
+              <div class="flex justify-end items-center py-[10px] text-white font-['Montserrat'] gap-[10px] md:gap-[47px] md:text-[14px] text-[8px] font-semibold w-auto  lg:px-0 ">
+                  
+                  
+                  <a href="Dangkidichvungoaikiem.html" class="">
+
+                      <div class="flex  lg:items-center gap-2">
+                          <div>
+                              <img src="./img/home/Vector.png" alt="">
+                          </div>
+                          <div class="">
+                              Đăng ký dịch vụ ngoại kiểm
+                          </div>
+                      </div>
+                  </a>
+                  <a href="">
+
+                      <div>
+                          <div class="flex lg:items-center gap-2">
+                              <div>
+                                      <img src="./img/home/Vector.png" alt="">
+                              </div>
+                              <div>
+                                  Gửi kết quả ngoại kiểm
+                              </div>
+                              </div>
+                      </div>
+                  </a>
+              </div>
+
+              
+          </div>
+      </div>
+      <div class="bg-white shadow h-auto  w-full ">
+          <div class="  xl:w-[1170px] w-auto  mx-auto px-4 lg:px-0">
+              <div class=" flex justify-between py-[9px] flex-wrap items-center  ">
+
+                  <div class="flex items-center justify-between lg:w-auto w-full">
+                      <div class="flex items-center gap-[9px]">
+
+                          <img src="./img/home/logo.png" alt="" class=" ">
+                      
+                          <span class=" uppercase font-['Montserrat'] ">
+                              <p class="font-bold text-[12px] xl:text-[16px] leading-[110%]  ">
+                                  Khoa vi sinh <br> & Labo lao chuẩn quốc gia
+                              </p>
+                              <p class="font-semibold text-[10px] xl:text-[11px] text-[#4B872A]">
+                                  Bệnh viện phổi trung ương
+                              </p>
+                          </span>
+                      </div>
+                      <!-- <div class="lg:hidden block" id="menu-button">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                          </svg>      
+                      </div> -->
+                      <div>
+
+                          <div onclick="toggleSlideover()"  class="lg:hidden block cursor-pointer px-5 py-2 text-sm border text-gray-500 hover:bg-gray-100 rounded border-gray-300">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                              </svg>
+                                  
+                          </div>
+                          <div id="slideover-container" class="w-full h-full fixed inset-0 invisible">
+                              <div onclick="toggleSlideover()" id="slideover-bg" class="w-full h-full duration-500 ease-out transition-all inset-0 absolute bg-gray-900 opacity-0"></div>
+                              <div onclick="toggleSlideover()" id="slideover"  class="w-96 bg-white h-full absolute right-0 duration-300 ease-out transition-all translate-x-full">
+                                  <div class="absolute cursor-pointer text-gray-600 top-0 w-8 h-8 flex items-center justify-center right-0 mt-5 mr-5">
+                                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                  </div>
+                                  <div class="  lg:w-auto mt-[70px] mx-auto" id="menu">
+                                  <ul class="
+                                      lg:inline-flex justify-center 
+                                  ">
+                                      <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold px-[22px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                                          <a href="Trang chủ.html">
+                                              Trang chủ
+                                          </a>
+                                      </li>
+                                      <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[18px] pr-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                          <a href="Về chúng tôi.html">
+                                              Về chúng tôi
+                                          </a>
+                                      </li>
+                                      <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  px-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                          <a href="Hoạt động.html">
+                                              Hoạt động
+                                          </a>
+                                      </li>
+                                      <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[20px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                                          <a href="Tin tức.html">
+                                              Tin tức
+                                          </a>
+                                      </li>
+                                      <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[19px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                          <a href="Liên hệ.html">
+                                              Liên hệ
+                                          </a>
+                                      </li>
+                                      
+                                      <div class="lg:flex  items-center ml-auto pl-[16px] ">
+                                          <div class=" pr-[35px] cursor-pointer">
+              
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                  <path d="M9.88891 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88891C18.7778 4.9797 14.7981 1 9.88891 1C4.9797 1 1 4.9797 1 9.88891C1 14.7981 4.9797 18.7778 9.88891 18.7778Z" stroke="#4B872A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M19.9998 20L16.1665 16.1667" stroke="#4B872A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                              </svg>
+                                          </div>
+                                          <div class="  flex gap-[9px] mt-[9px] lg:mt-0 cursor-pointer">
+                                              <img src="./img/home/flag.png" alt="" class="h-[20px] w-[20px]">
+                                              <span class="font-semibold text-[16px] leading-normal font-['Montserrat']">VNI</span>
+                                          </div>
+                                      </div>
+                                  </ul>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class=" hidden lg:flex w-full lg:w-auto " id="menu">
+                      <ul class="
+                          lg:inline-flex justify-start 
+                      ">
+                          <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold px-[22px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                              <a href="Trang chủ.html">
+                                  Trang chủ
+                              </a>
+                          </li>
+                          <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[18px] pr-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                              <a href="Về chúng tôi.html">
+                                  Về chúng tôi
+                              </a>
+                          </li>
+                          <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  px-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                              <a href="Hoạt động.html">
+                                  Hoạt động
+                              </a>
+                          </li>
+                          <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[20px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                              <a href="Tin tức.html">
+                                  Tin tức
+                              </a>
+                          </li>
+                          <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[19px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                              <a href="Liên hệ.html">
+                                  Liên hệ
+                              </a>
+                          </li>
+                          
+                          <div class="lg:flex  items-center ml-auto pl-[16px] ">
+                              <div class=" pr-[35px] cursor-pointer">
+  
+                                <div>
+                                  <div onclick="openSearchBox()">
+                              
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <path d="M9.88891 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88891C18.7778 4.9797 14.7981 1 9.88891 1C4.9797 1 1 4.9797 1 9.88891C1 14.7981 4.9797 18.7778 9.88891 18.7778Z" stroke="#4B872A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M19.9998 20L16.1665 16.1667" stroke="#4B872A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                  </svg>
+                                  </div>
+                                  <div id="search-box" class="hidden fixed top-0 left-0 w-screen h-screen bg-gray-900 z-90">
+                                      <span class="cursor-pointer text-6xl text-white hover:text-amber-500 absolute right-5 top-5" onclick="closeSearchBox()" title="Close">&times;</span>
+                                      <div class="w-full h-full flex justify-center items-center">
+                                          <form action="">
+                                              <input type="text" placeholder="What are you looking for?" name="search"
+                                                  class="w-96 px-3 py-2 rounded-tl-full rounded-bl-full border-0 focus:outline-0">
+                                              <button type="submit" class="px-3 py-2 -ml-1.5 bg-green-500 hover:bg-green-600 text-white rounded-tr-full rounded-br-full">Search</button>
+                                          </form>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="  flex gap-[9px] mt-[9px] lg:mt-0 cursor-pointer">
+                                  <img src="./img/home/flag.png" alt="" class="h-[20px] w-[20px]">
+                                  <span class="font-semibold text-[16px] leading-normal font-['Montserrat']">VNI</span>
+                              </div>
+                          </div>
+                      </ul>
+                  </div>
+
+              </div>
+          </div>
+          <script>
+              const button = document.querySelector('#menu-button');
+              const menu = document.querySelector('#menu');
+          
+          
+              button.addEventListener('click', () => {
+                  menu.classList.toggle('hidden');
+              });
+          
+              </script>
+      </div> 
+      <script>
+          function toggleSlideover(){
+              document.getElementById('slideover-container').classList.toggle('invisible');
+              document.getElementById('slideover-bg').classList.toggle('opacity-0');
+              document.getElementById('slideover-bg').classList.toggle('opacity-50');
+              document.getElementById('slideover').classList.toggle('translate-x-full');
+          }
+      </script>
+      <script>
+        var searchBox = document.getElementById("search-box");
+
+        function openSearchBox() {
+            searchBox.classList.remove("hidden");
+        }
+
+        function closeSearchBox() {
+            searchBox.classList.add("hidden");
+        }
+    </script>
+    </header>
+
+
+
+
+
+    <div class="px-4 mt-[300px] z-30">
+
+      <h2 class="text-3xl">KindaCode.com</h2>
+      <h3 class="text-xl my-5">Full-Screen Search Example</h3>\
+      
+      <div>
+        <div onclick="openSearchBox()">
+    
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9.88891 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88891C18.7778 4.9797 14.7981 1 9.88891 1C4.9797 1 1 4.9797 1 9.88891C1 14.7981 4.9797 18.7778 9.88891 18.7778Z" stroke="#4B872A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.9998 20L16.1665 16.1667" stroke="#4B872A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+        </div>
+        <div id="search-box" class="hidden fixed top-0 left-0 w-screen h-screen bg-gray-900 z-90">
+            <span class="cursor-pointer text-6xl text-white hover:text-amber-500 absolute right-5 top-5" onclick="closeSearchBox()" title="Close">&times;</span>
+            <div class="w-full h-full flex justify-center items-center">
+                <form action="">
+                    <input type="text" placeholder="What are you looking for?" name="search"
+                        class="w-96 px-3 py-2 rounded-tl-full rounded-bl-full border-0 focus:outline-0">
+                    <button type="submit" class="px-3 py-2 -ml-1.5 bg-green-500 hover:bg-green-600 text-white rounded-tr-full rounded-br-full">Search</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript code -->
+    
+</body>
+</html>

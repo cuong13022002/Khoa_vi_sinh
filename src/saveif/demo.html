@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  html,body
+  {
+    html, body {
+  min-height:100vh;
+  font-family: 'Manrope', sans-serif;
+}
+  }
+    @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  --color: #166e67;
+  --gap: 0.5rem;
+  --radius: 5px;
+}
+
+body {
+  margin: 2rem;
+  background-color: #b3e6f4;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.btn {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: var(--gap);
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.bx {
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  position: absolute;
+  width: 250px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin-top: 0.3rem;
+  background: white;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+</style>
+<body class=" h-full">
+ 
+ <header>
+  <nav class="bg-black text-white">
+    <ul class="px-4">
+       <li><a class="block py-2 text-3xl">Trek </a></li>
+    </ul>
+    <ul class="px-4">
+      <li>
+        <button class="block py-2 hasSubMenu">
+          Company 
+          <span class="inline-block">
+            <svg data-baseweb="icon" viewBox="0 0 24 24" class="ml-1 w-4 h-4 fill-current chevron">
+              <title>Chevron Down</title>
+              <path transform="rotate(270, 12, 12)" fill-rule="evenodd" clip-rule="evenodd" d="M9 12C9 12.2652 9.10536 12.5196 9.29289 12.7071L13.2929 16.7071C13.6834 17.0976 14.3166 17.0976 14.7071 16.7071C15.0976 16.3166 15.0976 15.6834 14.7071 15.2929L11.4142 12L14.7071 8.70711C15.0976 8.31658 15.0976 7.68342 14.7071 7.29289C14.3166 6.90237 13.6834 6.90237 13.2929 7.29289L9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12Z"></path>
+            </svg> 
+          </span> 
+        </button>
+        <ul class="bg-black text-sm subMenu hidden">
+          <li><a href="#" class="block py-2 ml-3">About Us</a></li>
+          <li><a href="#" class="block py-2 ml-3">Investor Relations </a></li>
+          <li><a href="#" class="block py-2 ml-3">Careers </a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="block py-2">Features </a></li>
+      <li><a href="#" class="block py-2">Download </a></li>
+      <li><a href="#" class="block py-2">FAQ </a></li>
+    </ul>
+    </nav>
+    <script>
+      function toggleMenu (btn) {
+        const el = btn.parentElement.querySelector('.subMenu')
+        console.log(el);
+        el.classList.toggle('hidden')
+      }
+      const btn = document.querySelector('.hasSubMenu')
+      console.log(btn);
+      btn.addEventListener('click', function(){
+        toggleMenu(btn)
+      })
+
+    </script>
+ </header>
+
+  <main class="mx-auto max-w-6xl ">
+    <div class=" relative  flex justify-between w-[870px] h-[200px] bg-[#F4F5F6] rounded-xl  px-[17px]">
+        <div>
+            <a class=" absolute top-[90px] " onclick="plusSlides(-1)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                  </svg>
+                  
+            </a>
+        </div>
+        <div>
+            <div class="mySlides fade  ">       
+                <div class="flex py-[32px] gap-[48.92px]">
+                    
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1432.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px]">Xét nghiệm GeneXpert</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <a href="">
+        
+                            <img src="./img/active/Ellipse 1433.png" >
+                            <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Truenat</p>
+                        </a>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1434.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">LPA</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1435.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Xét nghiệm trực tiếp</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1436.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Nuôi cấy</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1437.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Kháng sinh đồ</p>
+                
+                    </div>
+                    
+                </div>
+            </div>      
+            <div class="mySlides fade"> 
+                <div class="flex py-[32px] gap-[48.92px]">
+        
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1432.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px]">Xét nghiệm GeneXpert</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <a href="">
+        
+                            <img src="./img/active/Ellipse 1433.png" >
+                            <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Truenat</p>
+                        </a>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1434.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">LPA</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1435.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Xét nghiệm trực tiếp</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1436.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Nuôi cấy</p>
+                
+                    </div>
+                    <div class="w-[85px]">
+                        <img src="./img/active/Ellipse 1437.png" >
+                        <p class="text-[14px] font-semibold font-['Montserrat'] mt-[17px] text-center">Kháng sinh đồ</p>
+                
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mySlides fade">
+             SAFDSAF
+            </div>       
+        </div>
+        <div>
+            <a class=" absolute top-[90px] " onclick="plusSlides(1)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+                  
+            </a>
+        </div>
+    <div>
+    <br>
+    
+ 
+    
+    <!-- <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+    //   if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script> -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusSlides(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+    
+  </main>
+  <footer>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+<div class="container">
+  <button class="btn" id="btn">
+    Dropdown
+    <i class="bx bx-chevron-down" id="arrow"></i>
+  </button>
+
+  <div class="dropdown" id="dropdown">
+    <a href="#create">
+      <i class="bx bx-plus-circle"></i>
+      Create New
+    </a>
+    <a href="#draft">
+      <i class="bx bx-book"></i>
+      All Drafts
+    </a>
+    <a href="#move">
+      <i class="bx bx-folder"></i>
+      Move To
+    </a>
+    <a href="#profile">
+      <i class="bx bx-user"></i>
+      Profile Settings
+    </a>
+    <a href="#notification">
+      <i class="bx bx-bell"></i>
+      Notification
+    </a>
+    <a href="#settings">
+      <i class="bx bx-cog"></i>
+      Settings
+    </a>
+  </div>
+</div>
+    <script>
+        const dropdownBtn = document.getElementById("btn");
+const dropdownMenu = document.getElementById("dropdown");
+const toggleArrow = document.getElementById("arrow");
+
+// Toggle dropdown function
+const toggleDropdown = function () {
+  dropdownMenu.classList.toggle("show");
+  toggleArrow.classList.toggle("arrow");
+};
+
+// Toggle dropdown open/close when dropdown button is clicked
+dropdownBtn.addEventListener("click", function (e) {
+  e.stopPropagation();
+  toggleDropdown();
+});
+
+// Close dropdown when dom element is clicked
+document.documentElement.addEventListener("click", function () {
+  if (dropdownMenu.classList.contains("show")) {
+    toggleDropdown();
+  }
+});
+    </script>
+  </footer>
+
+
+  <div id="content" class="mb-4"></div>
+  <ul class="flex list-none" id="pagination" >
+    <li>safdsaf</li>
+    <li>safdsaf</li>
+  </ul>
+
+  <script>
+      // Sample data
+      const items = Array.from({ length: 30 }, (_, index) => `Item ${index + 1}`);
+      const itemsPerPage = 5;
+      let currentPage = 1;
+
+      function displayItems(page) {
+          const startIndex = (page - 1) * itemsPerPage;
+          const endIndex = startIndex + itemsPerPage;
+          const displayedItems = items.slice(startIndex, endIndex);
+
+          document.getElementById('content').innerHTML = displayedItems.join('<br>');
+      }
+
+      function updatePagination() {
+          const totalPages = Math.ceil(items.length / itemsPerPage);
+          const paginationElement = document.getElementById('pagination');
+
+          paginationElement.innerHTML = '';
+
+          for (let i = 1; i <= totalPages; i++) {
+              const li = document.createElement('li');
+              li.textContent = i;
+
+              if (i === currentPage) {
+                  li.classList.add('bg-blue-500', 'text-white');
+              } else {
+                  li.classList.add('hover:bg-blue-200');
+              }
+
+              li.classList.add('px-3', 'py-2', 'cursor-pointer', 'mr-2', 'rounded');
+
+              li.addEventListener('click', () => {
+                  currentPage = i;
+                  displayItems(currentPage);
+                  updatePagination();
+              });
+
+              paginationElement.appendChild(li);
+          }
+      }
+
+      // Initial display
+      displayItems(currentPage);
+      updatePagination();
+  </script>
+
+
+
+</body>
+</html>

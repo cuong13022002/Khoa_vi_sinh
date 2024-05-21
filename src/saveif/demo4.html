@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<style>
+    .list{
+        /* display: grid;
+        grid-template-columns: 300px 300px 300px;
+        column-gap: 20px; */
+    } 
+    .item .img img{
+        height: 200px;
+        transition: 0.5s;
+    }
+    .listPage{
+        padding: 10px;
+        text-align: center;
+        list-style: none;
+    }
+    .listPage li{
+        background: gainsboro;
+        padding: 20px;
+        display: inline-block;
+        margin: 0  10px;
+        cursor: pointer;
+    }
+    .listPage .active{
+        background-color: blueviolet;
+    }
+    <div class=" ">
+                            <div class="flex justify-center mt-[60px] mx-auto  w-auto md:flex-row gap-[8px] ">
+                                <button type="button" class=" h-[36px] text-[14px]  w-[36px] font-semibold bg-[#4B872A] rounded-lg font-['Montserrat'] text-white">1</button>
+                                <button type="button" class=" h-[36px] text-[#777E90] text-[16px] font-semibold w-[36px] bg-[#F4F5F6]  rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">2</button>
+                                <button type="button" class="hidden md:block h-[36px] text-[#777E90] text-[16px] font-semibold  w-[36px] bg-[#F4F5F6] rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">3</button>
+                                <button type="button" class=" hidden  md:block h-[36px] text-[#777E90] text-[16px] font-semibold w-[36px] bg-[#F4F5F6] rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">4</button>
+                                <button type="button" class="hidden md:block h-[36px] text-[#777E90] text-[16px] font-semibold w-[36px] bg-[#F4F5F6] rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">5</button>
+                                <button type="button" class="md:hidden h-[36px] text-[#777E90] text-[16px] font-semibold w-[36px] bg-[#F4F5F6] rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">...</button>
+                                <button type="button" class="hidden h-[36px] p-[7px] text-[#777E90]  w-[36px] bg-[#F4F5F6] rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                        <g clip-path="url(#clip0_1949_910)">
+                                          <path d="M9.16677 5.5L7.87427 6.7925L12.0726 11L7.87427 15.2075L9.16677 16.5L14.6668 11L9.16677 5.5Z" fill="#777E91"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_1949_910">
+                                            <rect width="22" height="22" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button type="button" class="h-[36px] w-[125px] text-[#777E90] text-[16px] font-semibold  bg-[#F4F5F6] rounded-lg font-['Montserrat'] hover:bg-[#4B872A] hover:text-white">Trang cuối</button>
+                            </div>
+                        </div>  -->
+</style>
+<body>
+    <div class="container">
+        <div class="list">
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 1</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 2</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 3</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 4</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 5</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 6</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 7</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 8</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="./img/home/Rectangle 141.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 9</div>
+                    <div class="des">
+                        Nguyen Van cuong
+                    </div>
+                    <div class="prices">100$</div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <ul class="listPage">
+           
+
+        </ul>
+    </div>
+    <script>
+        let thisPage = 1;
+        let limit =6;
+        let list = document.querySelectorAll('.list .item');
+        function loadItem(){
+            let beginGet = limit* (thisPage -1);
+            let endGet = limit*thisPage -1;
+            list.forEach((item,key)=>{
+                if(key>=beginGet & key <=endGet){
+                    item.style.display ='block';
+                }else{
+                    item.style.display='none';
+                }
+            })
+            listPage();
+        }
+        loadItem();
+        function listPage(){
+            let count = Math.ceil(list.length /limit);
+            document.querySelector('.listPage').innerHTML = '';
+            if(thisPage !=1){
+                let prev = document.createElement('li');
+                prev.innerText = "PREV";
+                prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
+                document.querySelector('.listPage').appendChild(prev);
+            }
+            for(i=1 ;i <= count ;i++){
+                let newPage = document.createElement('li');
+                newPage.innerText = i;
+                if( i ==thisPage){
+                    newPage.classList.add('active');
+                }
+                newPage.setAttribute('onclick', "changePage("+ i+")");
+                document.querySelector('.listPage').appendChild(newPage);
+            }
+            if(thisPage !=count){
+                let next = document.createElement('li');
+                next.innerText = "NEXT";
+                next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
+                document.querySelector('.listPage').appendChild(next);
+            }
+        }
+        function changePage(i){
+            thisPage =i;
+            loadItem();
+        }
+    </script>
+</body> 
+</html>

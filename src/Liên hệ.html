@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }       
+    </style>
+</head>
+<body class="" >
+    <header class="fixed top-0 w-full z-10">
+        <div class="bg-[#4B872A] lg:h-[40px] px-3 z-20 ">
+  
+            <div class="xl:w-[1170px] mx-auto ">
+  
+                
+                <div class="flex justify-end items-center py-[10px] text-white font-['Montserrat'] gap-[10px] md:gap-[47px] sm:text-[14px] text-[8px] font-semibold w-auto  lg:px-0 ">
+                    
+                    
+                    <a href="Dangkidichvungoaikiem.html" class="">
+  
+                        <div class="flex  items-center gap-2">
+                            <div>
+                                <img src="./img/home/Vector.png" alt="">
+                            </div>
+                            <div class="">
+                                Đăng ký dịch vụ ngoại kiểm
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+  
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <div>
+                                        <img src="./img/home/Vector.png" alt="">
+                                </div>
+                                <div>
+                                    Gửi kết quả ngoại kiểm
+                                </div>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+  
+                
+            </div>
+        </div>
+        <div class="bg-white shadow h-auto  w-full ">
+            <div class="  xl:w-[1170px] w-auto  mx-auto px-4 lg:px-0">
+                <div class=" flex justify-between py-[9px] flex-wrap items-center  ">
+  
+                    <div class="flex items-center justify-between lg:w-auto w-full">
+                        <div class="flex items-center gap-[9px]">
+  
+                            <img src="./img/home/logo.png" alt="" class=" ">
+                        
+                            <span class=" uppercase font-['Montserrat'] ">
+                                <p class="font-bold text-[12px] xl:text-[16px] leading-[110%]  ">
+                                    Khoa vi sinh <br> & Labo lao chuẩn quốc gia
+                                </p>
+                                <p class="font-semibold text-[10px] xl:text-[11px] text-[#4B872A]">
+                                    Bệnh viện phổi trung ương
+                                </p>
+                            </span>
+                        </div>
+                       
+                        <div>
+                            <div class="flex items-center gap-4">
+
+                               
+                                
+                                <div class=" block cursor-pointer">
+                                    <div class="lg:hidden"  onclick="openSearchBox()">
+                                
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9.88891 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88891C18.7778 4.9797 14.7981 1 9.88891 1C4.9797 1 1 4.9797 1 9.88891C1 14.7981 4.9797 18.7778 9.88891 18.7778Z" stroke="#4B872A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19.9998 20L16.1665 16.1667" stroke="#4B872A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>
+                                    </div>
+                                    <div id="search-box" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 z-90">
+                                        <span class="cursor-pointer text-6xl text-white hover:text-amber-500 absolute right-5 top-5" onclick="closeSearchBox()" title="Close">&times;</span>
+                                        <div class="w-full h-full flex justify-center items-center">
+                                            <form action="">
+                                                <input type="text" placeholder="Search..." name="search"
+                                                    class=" md:w-96 px-3 py-4 rounded-tl-full rounded-bl-full border-0 focus:outline-0">
+                                                <button type="submit" class="px-3 py-4 -ml-1.5 bg-green-500 hover:bg-[#E39D36]   text-white rounded-tr-full rounded-br-full">Search</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div onclick="toggleSlideover()"  class="lg:hidden block shadow-2xl cursor-pointer px-5 py-2 text-sm border text-gray-500 hover:bg-gray-100 rounded border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div id="slideover-container" class="w-full h-full fixed inset-0 invisible">
+                                <div onclick="toggleSlideover()" id="slideover-bg" class="w-full h-full duration-500 ease-out transition-all inset-0 absolute bg-gray-900 opacity-0"></div>
+                                <div onclick="toggleSlideover()" id="slideover"  class="w-96 bg-gray-200  h-full absolute right-0 duration-300 ease-out transition-all translate-x-full">
+                                    <div class="absolute cursor-pointer text-gray-600 top-0 w-8 h-8 flex items-center justify-center right-0 mt-5 mr-5">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                    </div>
+                                    <div class="  lg:w-auto mt-[70px] mx-auto" id="menu">
+                                    <ul class="
+                                        lg:inline-flex justify-center 
+                                    ">
+                                        <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold px-[22px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                                            <a href="Trang chủ.html">
+                                                Trang chủ
+                                            </a>
+                                        </li>
+                                        <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[18px] pr-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                            <a href="Về chúng tôi.html">
+                                                Về chúng tôi
+                                            </a>
+                                        </li>
+                                        <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  px-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                            <a href="#">
+                                                Hoạt động
+                                            </a>
+                                        </li>
+                                        <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[20px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                                            <a href="Tin tức.html">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[19px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                            <a href="Liên hệ.html">
+                                                Liên hệ
+                                            </a>
+                                        </li>
+                                        
+                                        <div class="lg:flex  items-center ml-auto pl-[16px] ">
+                                            <div class=" pr-[35px] cursor-pointer">
+                
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M9.88891 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88891C18.7778 4.9797 14.7981 1 9.88891 1C4.9797 1 1 4.9797 1 9.88891C1 14.7981 4.9797 18.7778 9.88891 18.7778Z" stroke="#4B872A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M19.9998 20L16.1665 16.1667" stroke="#4B872A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="  flex gap-[9px] mt-[9px] lg:mt-0 cursor-pointer">
+                                                <img src="./img/home/flag.png" alt="" class="h-[20px] w-[20px]">
+                                                <span class="font-semibold text-[16px] leading-normal font-['Montserrat']">VNI</span>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" hidden lg:flex w-full lg:w-auto  " id="menu">
+                        <ul class="
+                            lg:inline-flex justify-start 
+                        ">
+                            <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold px-[22px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                                <a href="Trang chủ.html">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[18px] pr-[20px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                <a href="Về chúng tôi.html">
+                                    Về chúng tôi
+                                </a>
+                            </li>
+                            <li class=" dropdown inline-block   relative font-['Montserrat']  text-[16px] rounded-[200px] font-semibold  px-[20px] py-[9px]  flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                <a href="#" class="">
+                                    Hoạt động
+                                </a>
+                                <div class="h-full pt-[25px]">
+
+                                    <ul class="dropdown-menu absolute hidden w-[350px] h-auto shadow-sm left-0 bg-[#FFF] px-[20px] py-[28px] rounded-xl text-black">
+                                        <li class="w-[264px] text-[14px] font-Montserrat font-semibold hover:text-[#E39D36]"><a href="Dichvuxetnghiem.html">Dịch vụ xét nghiệm</a></li>
+                                        <li class="mt-[22px]">
+                                    
+                                            <button class=" hasSubMenu ">
+        
+                                               
+                                                <div class=" flex justify-between gap-[20px] items-center ">
+                                                    
+                                                    <p class=" text-[14px] font-semibold w-[264px]  font-['Montserrat'] hover:text-[#E39D36] leading-tight">Đảm bảo chất lượng xét nghiệm Lao</p>
+                                                    <span class="inline-block ">
+            
+                                                        <svg data-baseweb="icon" viewBox="0 0 24 24" class="ml-1 w-[22px] h-[22px] fill-current chevron">
+                                                            <title>Chevron Down</title>
+                                                            <path transform="rotate(270, 12, 12)" fill-rule="evenodd" clip-rule="evenodd" d="M9 12C9 12.2652 9.10536 12.5196 9.29289 12.7071L13.2929 16.7071C13.6834 17.0976 14.3166 17.0976 14.7071 16.7071C15.0976 16.3166 15.0976 15.6834 14.7071 15.2929L11.4142 12L14.7071 8.70711C15.0976 8.31658 15.0976 7.68342 14.7071 7.29289C14.3166 6.90237 13.6834 6.90237 13.2929 7.29289L9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12Z"></path>
+                                                        </svg> 
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <ul class="bg-[#F4F5F6] text-sm subMenu hidden mt-[22px] rounded-[12px] py-[18px] px-[20px]">
+                                                <li class="text-[12px] font-semibold font-Montserrat leading-tight hover:text-[#E39D36]  "><a href="">Xét nghiệm GeneXpert</a></li>
+                                                <li class="text-[12px] font-semibold font-Montserrat leading-tight mt-[18px] hover:text-[#E39D36] "><a href="">Truenat</a></li>
+                                                <li class="text-[12px] font-semibold font-Montserrat leading-tight mt-[18px] hover:text-[#E39D36] "><a href="">LPA</a></li>
+                                                <li class="text-[12px] font-semibold font-Montserrat leading-tight mt-[18px] hover:text-[#E39D36] "><a href="">Xét nghiệm trực tiếp</a></li>
+                                                <li class="text-[12px] font-semibold font-Montserrat leading-tight mt-[18px] hover:text-[#E39D36] " ><a href="">Nuôi cấy</a></li>
+                                                <li class="text-[12px] font-semibold font-Montserrat leading-tight mt-[18px] hover:text-[#E39D36] "><a href="">Kháng sinh đồ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="text-[14px] font-Montserrat font-semibold mt-[18px] hover:text-[#E39D36] "><a href="Daotaotrongnuoc.html">Đào tạo</a></li>
+                                        <li class="text-[14px] font-Montserrat font-semibold mt-[23px] hover:text-[#E39D36]"><a href="Nghiên cứu.html">Hợp tác - Nghiên cứu</a></li>
+                                        <li class="text-[14px] font-Montserrat font-semibold mt-[23px] hover:text-[#E39D36]"><a href="Tailieu.html">Tài liệu</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[20px] py-[9px] flex-shrink-0 h-[40px] hover:text-white hover:bg-[#E39D36]">
+                                <a href="Tin tức.html">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="font-['Montserrat'] text-[16px] rounded-[200px] font-semibold  pl-[20px] pr-[19px] py-[9px] flex-shrink-0 h-[40px]  hover:text-white hover:bg-[#E39D36]">
+                                <a href="Liên hệ.html">
+                                    Liên hệ
+                                </a>
+                            </li>
+                            <!-- Search -->
+                            <div class="lg:flex  items-center ml-auto pl-[16px] ">
+                                <div class=" pr-[35px] cursor-pointer">
+    
+                                  <div>
+                                    <div onclick="openSearchBox()">
+                                
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9.88891 18.7778C14.7981 18.7778 18.7778 14.7981 18.7778 9.88891C18.7778 4.9797 14.7981 1 9.88891 1C4.9797 1 1 4.9797 1 9.88891C1 14.7981 4.9797 18.7778 9.88891 18.7778Z" stroke="#4B872A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19.9998 20L16.1665 16.1667" stroke="#4B872A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>
+                                    </div>
+                                    <div id="search-box" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 z-200">
+                                        <span class="cursor-pointer text-6xl text-white hover:text-amber-500 absolute right-5 top-5" onclick="closeSearchBox()" title="Close">&times;</span>
+                                        <div class="w-full h-full flex justify-center items-center">
+                                            <form action="">
+                                                <input type="text" placeholder="Search..." name="search"
+                                                    class="w-96 px-3 py-4 rounded-tl-full rounded-bl-full border-0 focus:outline-0">
+                                                <button type="submit" class="px-3 py-4 -ml-1.5 bg-green-500 hover:bg-[#E39D36]   text-white rounded-tr-full rounded-br-full">Search</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="  flex gap-[9px] mt-[9px] lg:mt-0 cursor-pointer">
+                                    <img src="./img/home/flag.png" alt="" class="h-[20px] w-[20px]">
+                                    <span class="font-semibold text-[16px] leading-normal font-['Montserrat']">VNI</span>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script>
+            function toggleMenu (btn) {
+              const el = btn.parentElement.querySelector('.subMenu')
+              console.log(el);
+              el.classList.toggle('hidden')
+            }
+            const btn = document.querySelector('.hasSubMenu')
+            console.log(btn);
+            btn.addEventListener('click', function(){
+              toggleMenu(btn)
+            })
+      
+        </script>
+        <script>
+            const button = document.querySelector('#menu-button');
+            const menu = document.querySelector('#menu');
+        
+        
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        
+        </script>
+        <script>
+            function toggleSlideover(){
+                document.getElementById('slideover-container').classList.toggle('invisible');
+                document.getElementById('slideover-bg').classList.toggle('opacity-0');
+                document.getElementById('slideover-bg').classList.toggle('opacity-50');
+                document.getElementById('slideover').classList.toggle('translate-x-full');
+            }
+        </script>
+        <script>
+          var searchBox = document.getElementById("search-box");
+  
+          function openSearchBox() {
+              searchBox.classList.remove("hidden");
+          }
+  
+          function closeSearchBox() {
+              searchBox.classList.add("hidden");
+          }
+      </script>
+    </header>
+    <main>
+        <section >
+            <div>
+                <img src="./img/contact/construction-05 1.png" alt="" class="w-[100%]">
+            </div>
+        </section>
+        <section>
+            <div class="px-4">
+                <div class="mx-auto max-w-6xl mt-[33px]">
+                    <div class="flex items-center">
+                        <div class="text-[#777E90] text-[16px] font-medium font-['Montserrat']">Trang chủ</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_1585_968)">
+                                  <path d="M9.16674 5L7.99174 6.175L11.8084 10L7.99174 13.825L9.16674 15L14.1667 10L9.16674 5Z" fill="#777E91"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1585_968">
+                                    <rect width="20" height="20" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </div>
+                        <div class="text-[#777E90] text-[16px] font-medium font-['Montserrat']">
+                            Liên hệ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="px-4">
+                <div class="mx-auto max-w-6xl mt-[43px] border-l-4 border-[#E39D36] px-[21px] ">
+                    <div class="sm:text-[28px] font-semibold font-Montserrat">
+                        Liên hệ
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="mx-auto xl:w-[1170px] mt-[37px] px-4 xl:px-0">
+
+                <div class="grid md:grid-cols-12  gap-[30px]">
+                     <div class="col-span-6"> 
+                        <img src="./img/contact/image3.png" alt="" class="object-cover rounded-2xl w-full h-full ">
+                    </div>
+                     <div class=" col-span-6"> 
+                        <div class="text-base xl:text-[20px] font-bold font-['Montserrat'] uppercase">
+                            Khoa vi sinh & Labo lao chuẩn quốc gia
+                        </div>
+                        <div class="text-[12px] xl:text-[16px] font-semibold uppercase">
+                            Bệnh viện phổi trung ương
+                        </div>
+                        <div class="mt-[42px]">
+                            <div class="flex items-center gap-[6px]">
+                                <div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
+                                        <path d="M17.6 2.2H16.5V0H14.3V2.2H5.5V0H3.3V2.2H2.2C0.979 2.2 0.011 3.19 0.011 4.4L0 19.8C0 21.01 0.979 22 2.2 22H17.6C18.81 22 19.8 21.01 19.8 19.8V4.4C19.8 3.19 18.81 2.2 17.6 2.2ZM17.6 19.8H2.2V8.8H17.6V19.8ZM6.6 13.2H4.4V11H6.6V13.2ZM11 13.2H8.8V11H11V13.2ZM15.4 13.2H13.2V11H15.4V13.2ZM6.6 17.6H4.4V15.4H6.6V17.6ZM11 17.6H8.8V15.4H11V17.6ZM15.4 17.6H13.2V15.4H15.4V17.6Z" fill="#4B872A"/>
+                                      </svg>
+                                </div>
+                                <div class="font-['Montserrat'] text-base xl:text-[24px] font-semibold">
+                                    Giờ mở cửa
+                                </div>
+                            </div>
+
+                            <div class="font-['Montserrat'] text-[10px] xl:text-[16px] font-semibold text-[#777E90]">
+                                Thứ 2 - thứ 4: 07h00 - 12h00, 13h30 - 17h00 <br>
+                                Thứ 5, thứ 6: 07h30 - 12h00, 13h30 - 16h00 <br>
+                                Thứ 7, chủ nhật: 07h30 - 12h00, 13h30 - 17h00
+                            </div>
+                        </div>
+                        <div class="mt-[42px]">
+                            <div class="flex items-center gap-[6px]">
+                                <div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+                                        <g clip-path="url(#clip0_1624_1337)">
+                                          <path d="M17.0712 2.94709C15.1824 1.04663 12.6711 0 10.0001 0C7.32903 0 4.8178 1.04658 2.92893 2.94709C1.0402 4.8475 0 7.37417 0 10.0618C0 12.7493 1.0402 15.2761 2.92893 17.1766L9.50599 23.7941C9.64245 23.9314 9.82129 24 10.0001 24C10.1789 24 10.3578 23.9313 10.4942 23.7941L17.071 17.1766C18.9598 15.2762 20 12.7494 20 10.0618C20 7.37412 18.9599 4.84746 17.0712 2.94709ZM13.1406 13.2216C12.3018 14.0656 11.1865 14.5305 10.0001 14.5305C8.8138 14.5305 7.69851 14.0657 6.85971 13.2217C6.02082 12.3776 5.55886 11.2554 5.55886 10.0618C5.55886 8.86813 6.02082 7.74594 6.85971 6.90185C7.69851 6.05782 8.8138 5.59301 10.0001 5.59301C11.1865 5.59301 12.3018 6.05782 13.1406 6.90185C13.9795 7.74584 14.4415 8.86804 14.4415 10.0617C14.4415 11.2554 13.9794 12.3776 13.1406 13.2216Z" fill="#4B872A"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_1624_1337">
+                                            <rect width="20" height="24" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </div>
+                                <div class="font-['Montserrat'] text-base xl:text-[24px] font-semibold">
+                                    Địa chỉ
+                                </div>
+                            </div>
+
+                            <div class="font-['Montserrat'] text-[10px] xl:text-[16px] font-semibold text-[#777E90]">
+                                Cổng số 1: Số 463 Hoàng Hoa Thám - Ba Đình - Hà Nội <br>Cổng số 2: Số 2A phố Đội Nhân - Ba Đình - Hà Nội
+                        </div>
+                        <div class="mt-[40px]">
+                            <div>
+                                <div class="grid grid-cols-6 gap-3">
+                                    <div class="col-span-3">
+                                        <div class="flex items-center gap-[6px]">
+                                            <div>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                                    <path d="M22.0737 5.91367C22.2451 5.79338 22.5 5.90591 22.5 6.09605V16.1374C22.5 17.1657 21.5552 18 20.3906 18H2.10938C0.944824 18 0 17.1657 0 16.1374V6.09993C0 5.90591 0.250488 5.79726 0.42627 5.91755C1.41064 6.59274 2.71582 7.4503 7.19824 10.3256C8.12549 10.9232 9.68994 12.1805 11.25 12.1727C12.8188 12.1843 14.4141 10.8999 15.3062 10.3256C19.7886 7.4503 21.0894 6.58886 22.0737 5.91367ZM11.25 9.93373C12.2695 9.94925 13.7373 8.80066 14.4756 8.32726C20.3071 4.59047 20.751 4.26452 22.0957 3.33323C22.3506 3.15862 22.5 2.88699 22.5 2.59984V1.86257C22.5 0.834278 21.5552 0 20.3906 0H2.10938C0.944824 0 0 0.834278 0 1.86257V2.59984C0 2.88699 0.149414 3.15474 0.404297 3.33323C1.74902 4.26064 2.19287 4.59047 8.02441 8.32726C8.7627 8.80066 10.2305 9.94925 11.25 9.93373Z" fill="#4B872A"/>
+                                                </svg>
+                                            </div>
+                                            <div class="font-['Montserrat'] text-base xl:text-[24px] font-semibold">
+                                               Email
+                                            </div>
+                                        </div>
+                                        <div class="font-['Montserrat'] text-[10px] xl:text-[16px] font-semibold text-[#777E90]">
+                                            bvptw@gmail.com
+                                        </div>
+                                    </div>
+                                    <div class="col-span-3">
+                                        <div class="flex items-center gap-[6px]">
+                                            <div>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                                    <path d="M0.897959 7.73881C0.653265 7.77407 0.442245 7.72117 0.264898 7.5757C0.087551 7.43243 0 7.23405 0 6.98278L0 3.38338C0.0359184 3.33489 0.0942857 3.27317 0.175102 3.19382C0.253673 3.11667 0.44449 2.96018 0.743061 2.72654C1.04163 2.4929 1.37163 2.26807 1.73306 2.05206C2.09449 1.83606 2.58612 1.59801 3.20796 1.34012C3.83204 1.08223 4.49653 0.857409 5.20592 0.665646C5.91531 0.473885 6.77735 0.315184 7.79204 0.189547C8.80674 0.0639095 9.87531 -1.14441e-05 11 -1.14441e-05C12.1247 -1.14441e-05 13.1933 0.0639095 14.208 0.189547C15.2227 0.315184 16.0869 0.478291 16.8031 0.674461C17.5192 0.872837 18.1814 1.09105 18.792 1.3313C19.4027 1.57156 19.901 1.81181 20.2871 2.05206C20.671 2.29232 20.9988 2.51494 21.2682 2.71772C21.5376 2.92271 21.7261 3.08361 21.8361 3.20484L22 3.38558L22 6.98278C22 7.15029 21.9596 7.29797 21.881 7.42361C21.8024 7.54925 21.6924 7.63962 21.551 7.69472C21.4096 7.74982 21.2614 7.76305 21.102 7.73881L17.398 7.12605C17.1533 7.09078 16.9422 6.96955 16.7649 6.76677C16.5876 6.56178 16.5 6.33475 16.5 6.08348L16.5 3.45612C14.7759 3.16737 12.9441 3.02189 11 3.02189C9.05592 3.02189 7.22408 3.16517 5.5 3.45391V6.08348C5.5 6.33475 5.41245 6.56398 5.2351 6.76677C5.05776 6.97176 4.84673 7.09078 4.60204 7.12605L0.897959 7.73881ZM0.915918 19.8C0.66 19.8 0.442245 19.714 0.264898 19.5399C0.087551 19.3636 0 19.152 0 18.8985L0 15.0831C0 14.9266 0.0314286 14.7502 0.0920408 14.5519C0.152653 14.3535 0.233469 14.1639 0.33 13.9854C0.428776 13.8047 0.532041 13.6614 0.642041 13.5534L7.33408 8.10029V7.20099C7.33408 7.1525 7.34082 7.09078 7.35204 7.01143C7.36327 6.93429 7.43735 6.79542 7.57204 6.59705C7.70674 6.39867 7.89082 6.22455 8.12204 6.07466C8.35327 5.92478 8.72143 5.79033 9.22204 5.6691C9.72265 5.55007 10.3153 5.48836 11 5.48836C11.6847 5.48836 12.2773 5.54566 12.778 5.66028C13.2786 5.7749 13.6467 5.91596 13.878 6.08348C14.1092 6.251 14.2933 6.41851 14.428 6.58823C14.5627 6.75575 14.6367 6.90122 14.648 7.02025L14.6659 7.20099V8.10029L21.358 13.5534C21.5286 13.7341 21.679 13.9744 21.8069 14.2742C21.9349 14.5739 22 14.845 22 15.0853V18.8985C22 19.1498 21.9124 19.3636 21.7351 19.5377C21.5578 19.7118 21.34 19.7978 21.0841 19.7978L0.915918 19.7978V19.8Z" fill="#4B872A"/>
+                                                  </svg>
+                                            </div>
+                                            <div class="font-['Montserrat'] text-base xl:text-[24px] font-semibold">
+                                                Hotline
+                                            </div>
+                                        </div>
+                                        <div class="font-['Montserrat'] text-[10px] xl:text-[16px] font-semibold text-[#777E90]">
+                                            0967 941 616 - 0243 8326 249
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="px-4">
+                <div class="mx-auto xl:w-[1170px]  mt-[43px] border-l-4 border-[#E39D36] px-[21px] ">
+                    <div class="sm:text-[28px] font-semibold font-Montserrat">
+                        Map
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Map -->
+        <section>
+            <div class="px-4">
+                <div class=" mx-auto xl:w-[1170px]  mt-[30px]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3557143502667!2d105.82376237476896!3d21.018448388133546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab78f9906e29%3A0xb6fed33df7b6b3c!2zNzIgTmcuIDY0IFAuIE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBDaOG7oyBE4burYSwgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1700194049876!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information -->
+
+
+        <section>
+            <div class="bg-[#F4F5F6] h-auto md:h-[500px]  px-4 mt-[105px] pb-[58px] w-[100%]">
+                <div class="mx-auto xl:w-[1170px] ">
+                    <div class="text-center sm:text-[28px] font-semibold font-['Montserrat'] pt-[69px] ">
+                        Form liên hệ
+                    </div>
+                    <div>
+                        <div class="grid md:grid-cols-12 gap-[30px]">
+                            <div class=" col-span-7">
+                                <div class="grid md:grid-cols-2 gap-[30px]">
+                                    <div class="w-full ">
+                                        <label for="" class="text-[16px] font-semibold font-['Montserrat'] text-[#777E90]">Họ và tên:</label>
+                                        <input type="text" value="" class="w-full h-[50px] px-4 mt-[10px] outline-none rounded-xl" placeholder="Nhập họ và tên">
+                                    </div>
+                                    <div class="w-full ">
+                                        <label for="" class="text-[16px] font-semibold font-['Montserrat'] text-[#777E90]">Số điện thoại:</label>
+                                        <input type="text" value="" class="w-full h-[50px] px-4 mt-[10px] outline-none rounded-xl" placeholder="Nhập số điện thoại">
+                                    </div>
+                                </div>
+                                <div class="mt-[27px]">
+                                    <label for="" class="text-[16px] font-semibold font-['Montserrat'] text-[#777E90]">Email:</label><br>
+                                    <input type="text" value="" class="w-full h-[50px] px-4 mt-[10px] md:w-[100%] rounded-xl outline-none" placeholder="Nhập email">
+                                </div>
+                                
+                            </div>
+                            <div class="md:col-span-5 col-span-7 ">
+                                <div class="">
+                                    <label for="" class="text-[16px] font-semibold font-['Montserrat'] text-[#777E90]">Nội dung yêu cầu:</label><br>
+                                    <input type="text" value="" class="w-full h-[160px] px-4 mt-[10px] md:w-[100%] rounded-xl outline-none" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-[60px] ">
+                        <button class="text-[16px] font-semibold text-white bg-[#E39D36] w-[170px] h-[50px] rounded-2xl  hover:bg-[#4B872A] duration-300  hover:-translate-y-1 transition ease-in-out delay-150 hover:scale-110" type="submit">Gửi thông tin</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="relative">
+            <div class="bg-[#4B872A] h-auto lg:h-[400px]  px-6 lg:px-6 pt-[20px]  font-['Montserrat']">
+                <div class="">
+
+                    <div class=" mx-auto flex flex-wrap xl:w-[1170px] justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-[19px]">
+                                <div>
+                                    <a href="./img/image 2.png" download="image2">
+    
+                                        <img src="./img/image 2.png" alt="" class="" >
+                                    </a>
+    
+                                </div>
+                                <div>
+                                    
+                                    <p class="w-[202px] font-['Montserrat'] md:text-[20px] leading-[120%] font-bold uppercase text-white">Khoa vi sinh <br> & Labo lao chuẩn quốc gia</p>
+                                    <p class="font-semibold text-[11.7px] uppercase font-['Montserrat'] text-white mt-[3px]">Bệnh viện phổi trung ương</p>
+                                </div>
+                            </div>
+                            <div class="flex mt-[32px] gap-[15px]">
+                                <div>
+                                    <a href="" >
+                                        
+                                        <img src="./img1.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        
+                                        <img src="./img/Group2.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+    
+                                        <img src="./img/Group3.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+    
+                                        <img src="./img/Group4.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="">
+    
+                                        <img src="./img/Group5.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="text-white lg:mt-0 mt-[20px]">
+                            
+                            <div class="">
+                                <div class="flex items-center gap-[9px]">
+                                    <div class="mb-[6px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                                            <g clip-path="url(#clip0_1523_172)">
+                                              <path d="M13.6569 2.33311C12.1459 0.828581 10.1369 0 8.00007 0C5.86322 0 3.85424 0.828544 2.34314 2.33311C0.832156 3.83761 0 5.83788 0 7.96556C0 10.0932 0.832156 12.0936 2.34314 13.5981L7.60479 18.837C7.71396 18.9457 7.85703 19 8.00007 19C8.14315 19 8.28623 18.9456 8.39536 18.837L13.6568 13.5982C15.1678 12.0936 16 10.0933 16 7.9656C16 5.83785 15.1679 3.83757 13.6569 2.33311ZM10.5125 10.4671C9.84142 11.1353 8.94918 11.5033 8.00011 11.5033C7.05104 11.5033 6.15881 11.1353 5.48777 10.4671C4.81665 9.79895 4.44709 8.91055 4.44709 7.96556C4.44709 7.0206 4.81665 6.1322 5.48777 5.46397C6.15881 4.79577 7.05104 4.4278 8.00011 4.4278C8.94918 4.4278 9.84142 4.79577 10.5125 5.46397C11.1836 6.13213 11.5532 7.02053 11.5532 7.96552C11.5532 8.91052 11.1835 9.79895 10.5125 10.4671Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_1523_172">
+                                                <rect width="16" height="19" fill="white"/>
+                                              </clipPath>
+                                            </defs>
+                                          </svg>
+                                    </div>
+                                    <div class="text-[16px] font-['Montserrat'] font-semibold ">Địa chỉ</div>
+                                </div>
+                                <div class="text-[14px] font-medium font-['Montserrat']">
+    
+                                    <p>Cổng số 1: Số 463 Hoàng Hoa Thám, Ba Đình, Hà Nội</p>
+                                    <p>Cổng số 2: Số 2A phố Đội Nhân, Ba Đình, Hà Nội</p>
+                                </div>
+                            </div>
+                            <div class="py-[29px]">
+                                <div class="flex items-center gap-[9px]">
+                                    <div class="mb-[6px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13" fill="none">
+                                            <path d="M15.9421 4.27098C16.0659 4.18411 16.25 4.26538 16.25 4.4027V11.6548C16.25 12.3975 15.5676 13 14.7265 13H1.52344C0.682372 13 0 12.3975 0 11.6548V4.4055C0 4.26538 0.180908 4.18691 0.307861 4.27378C1.0188 4.76142 1.96142 5.38076 5.19873 7.4574C5.8684 7.88899 6.99828 8.79699 8.12499 8.79139C9.25805 8.79979 10.4101 7.87217 11.0544 7.4574C14.2917 5.38076 15.2312 4.75861 15.9421 4.27098ZM8.12499 7.17435C8.86132 7.18556 9.92138 6.35603 10.4546 6.01413C14.6662 3.31534 14.9868 3.07993 15.958 2.40733C16.1421 2.28122 16.25 2.08505 16.25 1.87766V1.34519C16.25 0.602534 15.5676 0 14.7265 0H1.52344C0.682372 0 0 0.602534 0 1.34519V1.87766C0 2.08505 0.10791 2.27842 0.291992 2.40733C1.26318 3.07712 1.58374 3.31534 5.7954 6.01413C6.32861 6.35603 7.38866 7.18556 8.12499 7.17435Z" fill="white"/>
+                                          </svg>
+                                    </div>
+                                    <div class="text-[16px] font-['Montserrat'] font-semibold">
+                                        Email
+                                    </div>
+                                </div>
+                                <p  class="text-[14px] font-medium font-['Montserrat']">bvptw@gmail.com</p>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-[9px]">
+                                    <div class="mb-[6px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                            <path d="M0.657597 5.6673C0.478402 5.69313 0.323867 5.65439 0.193991 5.54785C0.0641158 5.44293 0 5.29766 0 5.11364L0 2.47772C0.0263039 2.4422 0.0690477 2.39701 0.128231 2.3389C0.185771 2.2824 0.325511 2.1678 0.544162 1.99669C0.762813 1.82559 1.00448 1.66095 1.26916 1.50276C1.53385 1.34457 1.89388 1.17024 2.34927 0.981387C2.8063 0.79253 3.29292 0.627886 3.81242 0.487453C4.33192 0.347022 4.96322 0.230802 5.7063 0.138794C6.44939 0.0467873 7.23193 -2.28882e-05 8.05557 -2.28882e-05C8.87921 -2.28882e-05 9.66175 0.0467873 10.4048 0.138794C11.1479 0.230802 11.7809 0.350249 12.3053 0.49391C12.8297 0.639184 13.3147 0.798987 13.7619 0.974931C14.209 1.15088 14.574 1.32682 14.8568 1.50276C15.1379 1.6787 15.3779 1.84174 15.5752 1.99024C15.7725 2.14036 15.9106 2.25819 15.9911 2.34697L16.1111 2.47933V5.11364C16.1111 5.23632 16.0815 5.34447 16.024 5.43648C15.9665 5.52848 15.8859 5.59466 15.7823 5.63502C15.6788 5.67537 15.5703 5.68506 15.4535 5.6673L12.741 5.21856C12.5618 5.19274 12.4072 5.10396 12.2773 4.95545C12.1475 4.80534 12.0834 4.63908 12.0834 4.45507V2.53098C10.8208 2.31953 9.47927 2.21299 8.05557 2.21299C6.63187 2.21299 5.29037 2.31791 4.02778 2.52937L4.02778 4.45507C4.02778 4.63908 3.96367 4.80695 3.83379 4.95545C3.70392 5.10557 3.54938 5.19274 3.37019 5.21856L0.657597 5.6673ZM0.670749 14.5C0.483334 14.5 0.323867 14.437 0.193991 14.3095C0.0641158 14.1804 0 14.0254 0 13.8398L0 11.0457C0 10.9311 0.0230159 10.802 0.0674037 10.6567C0.111792 10.5114 0.170975 10.3726 0.241667 10.2418C0.314003 10.1095 0.389627 10.0046 0.470182 9.92546L5.37093 5.93202V5.27345C5.37093 5.23793 5.37586 5.19274 5.38408 5.13463C5.3923 5.07813 5.44655 4.97644 5.54519 4.83117C5.64383 4.68589 5.77864 4.55837 5.94797 4.44861C6.1173 4.33885 6.38692 4.24038 6.75353 4.1516C7.12014 4.06444 7.55415 4.01924 8.05557 4.01924C8.55699 4.01924 8.991 4.06121 9.35761 4.14515C9.72422 4.22908 9.99384 4.33239 10.1632 4.45507C10.3325 4.57774 10.4673 4.70042 10.5659 4.82471C10.6646 4.94739 10.7188 5.05392 10.7271 5.14108L10.7402 5.27345V5.93202L15.641 9.92546C15.7659 10.0578 15.876 10.2338 15.9698 10.4533C16.0635 10.6728 16.1111 10.8714 16.1111 11.0473V13.8398C16.1111 14.0238 16.047 14.1804 15.9171 14.3079C15.7873 14.4354 15.6278 14.4984 15.4404 14.4984L0.670749 14.4984V14.5Z" fill="white"/>
+                                          </svg>
+                                    </div>
+                                    <div class="text-[16px] font-['Montserrat'] font-semibold">
+                                        Hotline
+                                    </div>
+                                </div>
+                                <p  class="text-[14px] font-medium font-['Montserrat']">0967 941 616 - 0243 8326 249</p>
+                            </div>
+    
+                        </div>
+                       <div class="h-auto w-auto mt-[20px] lg:mt-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3557143502694!2d105.82376237484876!3d21.018448388133436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab78f9906e29%3A0xb6fed33df7b6b3c!2zNzIgTmcuIDY0IFAuIE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBDaOG7oyBE4burYSwgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1699415554921!5m2!1svi!2s" class="md:w-[320px] w-full  h-[200px]  rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                        
+                    </div> 
+                    
+                    <!-- <div class="absolute top-[66px] right-0   ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="188" viewBox="0 0 38 188" fill="none">
+                            <path d="M0 10C0 4.47715 4.47715 0 10 0H38V188H10C4.47715 188 0 183.523 0 178V10Z" fill="#E39D36"/>
+                          </svg>
+                    </div> -->
+                </div>
+                <hr class="mt-[19px] border-gray-200 mx-auto max-w-6xl " />
+                <div class="grid lg:grid-cols-3 grid-cols-1 pb-10 mx-auto max-w-6xl">
+                    <div>
+
+                        <p class="w-auto lg:w-[328px] h-[34px] text-[14px] font-normal font-['Montserrat'] text-white mt-[36px] ">© 2023 Khoa vi sinh & Labo lao chuẩn quốc gia. <br> All rights reserved.</p>
+                    </div>
+                    <div class="flex items-center mx-auto gap-5 mt-[36px] md:mt-[26px]">
+                        <div>
+                            <a href="http://facebook.com">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21.4286 0H2.57143C1.88944 0 1.23539 0.270918 0.753154 0.753154C0.270918 1.23539 0 1.88944 0 2.57143L0 21.4286C0 22.1106 0.270918 22.7646 0.753154 23.2468C1.23539 23.7291 1.88944 24 2.57143 24H9.92411V15.8405H6.54911V12H9.92411V9.07286C9.92411 5.74339 11.9063 3.90429 14.9421 3.90429C16.3961 3.90429 17.9164 4.16357 17.9164 4.16357V7.43143H16.2413C14.5907 7.43143 14.0759 8.45571 14.0759 9.50625V12H17.7605L17.1712 15.8405H14.0759V24H21.4286C22.1106 24 22.7646 23.7291 23.2468 23.2468C23.7291 22.7646 24 22.1106 24 21.4286V2.57143C24 1.88944 23.7291 1.23539 23.2468 0.753154C22.7646 0.270918 22.1106 0 21.4286 0Z" fill="white"/>
+                                  </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.74475 0H3.8596L5.21986 4.27813H5.34894L6.66948 0H8.80419L6.35175 6.26043V10.7004H4.24683V6.46271L1.74475 0ZM9.0227 4.61186C9.0227 3.98481 9.28085 3.47912 9.78723 3.11502C10.2936 2.74081 10.9787 2.55876 11.8326 2.55876C12.607 2.55876 13.2524 2.75093 13.7489 3.14536C14.2453 3.5398 14.4935 4.04549 14.4935 4.66243V8.84953C14.4935 9.54739 14.2453 10.0834 13.7588 10.488C13.2723 10.8824 12.5971 11.0847 11.7432 11.0847C10.9191 11.0847 10.2638 10.8824 9.76737 10.4779C9.27092 10.0733 9.0227 9.51704 9.0227 8.82931V4.61186ZM10.9588 8.9709C10.9588 9.1934 11.0283 9.36534 11.1574 9.4867C11.2865 9.60807 11.4851 9.66875 11.7333 9.66875C11.9914 9.66875 12.19 9.60807 12.3389 9.4867C12.4879 9.36534 12.5673 9.1934 12.5673 8.9709V4.55118C12.5673 4.36913 12.4879 4.22754 12.3389 4.1264C12.19 4.01515 11.9815 3.96458 11.7333 3.96458C11.5049 3.96458 11.3163 4.01515 11.1773 4.1264C11.0383 4.23765 10.9588 4.37924 10.9588 4.55118V8.9709ZM21.3741 10.7913V2.68003H19.5074V8.83932C19.3287 9.01125 19.1301 9.16296 18.9216 9.27421C18.7131 9.38546 18.5344 9.44615 18.3954 9.44615C18.2167 9.44615 18.0876 9.39558 18.0082 9.31467C17.9288 9.23376 17.889 9.09216 17.889 8.9V2.69014H16.0026V9.46637C16.0026 9.94172 16.1118 10.3058 16.3302 10.5485C16.5486 10.7913 16.8763 10.9126 17.3132 10.9126C17.6607 10.9126 18.028 10.8216 18.4053 10.6497C18.7826 10.4676 19.1401 10.2249 19.4876 9.89115V10.7913H21.3741Z" fill="white"/>
+                                    <path d="M22.774 14.6548C22.774 13.249 21.3542 12.1062 19.6067 12.1062C17.1146 12.0253 14.5628 11.9848 11.9615 11.9848C9.36012 11.9848 6.80839 12.0151 4.31625 12.1062C2.56876 12.1062 1.14893 13.249 1.14893 14.6548C1.03972 15.7674 1 16.8799 1 17.9924C1 19.1049 1.03972 20.2174 1.14893 21.3299C1.14893 22.7358 2.56876 23.8786 4.31625 23.8786C6.80839 23.9595 9.36012 24 11.9615 24C14.5628 24 17.1146 23.9696 19.6067 23.8786C21.3542 23.8786 22.774 22.7358 22.774 21.3299C22.8832 20.2174 22.923 19.1049 22.923 17.9924C22.9329 16.8799 22.8832 15.7674 22.774 14.6548Z" fill="white"/>
+                                    <path d="M7.30484 13.9368H2.70776V15.0796H4.25667V21.8255H5.75593V15.0796H7.30484V13.9368ZM9.74734 20.4197C9.61827 20.5512 9.48919 20.6523 9.34026 20.7332C9.19133 20.8141 9.07218 20.8546 8.97289 20.8546C8.84381 20.8546 8.75445 20.8242 8.70481 20.7636C8.64524 20.7029 8.62538 20.6017 8.62538 20.4602V16H7.28498V20.8647C7.28498 21.2086 7.36441 21.4715 7.52327 21.6435C7.68213 21.8154 7.9105 21.9064 8.21829 21.9064C8.46652 21.9064 8.72467 21.8457 8.99275 21.7244C9.26083 21.603 9.50905 21.421 9.75727 21.1883V21.8356H11.0877V16.0202H9.74734V20.4197ZM14.9004 15.9292C14.6919 15.9292 14.4933 15.9797 14.2848 16.0708C14.0863 16.1618 13.8976 16.2933 13.7189 16.4753V13.9368H12.3785V21.8255H13.7189V21.3805C13.8976 21.5626 14.0863 21.6839 14.2848 21.7749C14.4834 21.8559 14.7217 21.9064 14.9799 21.9064C15.377 21.9064 15.6749 21.7952 15.8834 21.5727C16.0919 21.3502 16.1912 21.0366 16.1912 20.622V17.3957C16.1912 16.9203 16.082 16.5562 15.8536 16.3135C15.6451 16.0607 15.3274 15.9292 14.9004 15.9292ZM14.8309 20.4602C14.8309 20.6422 14.7912 20.7838 14.7118 20.8647C14.6324 20.9456 14.5132 20.9861 14.3543 20.9861C14.2451 20.9861 14.1359 20.9658 14.0366 20.9254C13.9373 20.8849 13.8281 20.8141 13.7189 20.7231V17.0923C13.8083 17.0114 13.8976 16.9507 13.9969 16.9102C14.0863 16.8698 14.1856 16.8495 14.2749 16.8495C14.4536 16.8495 14.5926 16.9001 14.6919 17.0012C14.7912 17.1024 14.8309 17.2541 14.8309 17.4462V20.4602ZM21.1159 19.0543V17.5676C21.1159 17.0114 20.9571 16.5967 20.6294 16.2933C20.3017 16 19.8351 15.8483 19.2294 15.8483C18.6337 15.8483 18.1472 16.0101 17.7699 16.3236C17.3926 16.6371 17.2039 17.0518 17.2039 17.5575V20.1669C17.2039 20.7231 17.3727 21.1681 17.7202 21.4918C18.0578 21.8154 18.5344 21.9671 19.1301 21.9671C19.7954 21.9671 20.2918 21.8154 20.6195 21.512C20.9571 21.2086 21.1159 20.7636 21.1159 20.1669V19.732H19.7457V20.1365C19.7457 20.4804 19.706 20.7029 19.6167 20.804C19.5273 20.9052 19.3784 20.9557 19.15 20.9557C18.9415 20.9557 18.7926 20.895 18.7032 20.7737C18.6138 20.6523 18.5741 20.4399 18.5741 20.1365V19.0341H21.1159V19.0543ZM18.5741 17.5575C18.5741 17.3148 18.6238 17.1428 18.7131 17.0316C18.8025 16.9304 18.9613 16.8698 19.1699 16.8698C19.3684 16.8698 19.5174 16.9203 19.6167 17.0316C19.706 17.1327 19.7557 17.3148 19.7557 17.5575V18.1441H18.584V17.5575H18.5741Z" fill="#4B872A"/>
+                                  </svg>
+                                </a>
+                        </div>
+                        <div>
+                            <a href="https://zalo.me">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34315 0 3V21C0 22.6569 1.34315 24 3 24H21C22.6569 24 24 22.6569 24 21V3C24 1.34315 22.6569 0 21 0H3ZM12.4083 9.68891V10.0629H12.4075C11.9392 9.721 11.3737 9.53699 10.7933 9.53764C10.0678 9.53764 9.37198 9.82498 8.85881 10.3365C8.34563 10.848 8.05711 11.5419 8.05667 12.2655C8.05711 12.9891 8.34563 13.683 8.85881 14.1945C9.37198 14.706 10.0678 14.9934 10.7933 14.9934C11.374 14.9942 11.9398 14.8102 12.4083 14.4681V14.4672C12.409 14.5939 12.46 14.7152 12.5501 14.8044C12.6402 14.8937 12.7622 14.9437 12.8892 14.9435H13.5308V9.68891H12.4083ZM7.76583 8.17039V8H2.16V9.19687H6.0475L2.20833 13.9386C2.09167 14.1098 2 14.2744 2 14.6426V14.9435H7.285C7.3481 14.9436 7.41061 14.9313 7.46894 14.9073C7.52728 14.8833 7.58029 14.848 7.62495 14.8036C7.66961 14.7591 7.70504 14.7063 7.72922 14.6481C7.75339 14.59 7.76583 14.5277 7.76583 14.4647V13.8264H3.68667L7.28917 9.31655C7.35446 9.23598 7.4217 9.157 7.49083 9.07967L7.51583 9.05141C7.72333 8.74721 7.76583 8.48789 7.76583 8.17039ZM14.6088 14.8266C14.6838 14.9014 14.7856 14.9435 14.8917 14.9435H15.6925V8H14.4917V14.5445C14.4917 14.6503 14.5338 14.7518 14.6088 14.8266ZM20.2985 9.71324C19.9642 9.57525 19.606 9.50428 19.2442 9.50439C18.5135 9.50461 17.8128 9.79432 17.2963 10.3098C16.7798 10.8253 16.4898 11.5243 16.49 12.253C16.4902 12.9818 16.7807 13.6806 17.2975 14.1958C17.8143 14.7109 18.5152 15.0002 19.2458 15C19.6076 14.9999 19.9659 14.9287 20.3001 14.7905C20.6343 14.6523 20.9379 14.4498 21.1937 14.1946C21.4494 13.9394 21.6523 13.6364 21.7906 13.303C21.929 12.9695 22.0001 12.6122 22 12.2514C21.9999 11.8905 21.9285 11.5332 21.79 11.1999C21.6514 10.8666 21.4484 10.5637 21.1925 10.3086C20.9366 10.0535 20.6328 9.85123 20.2985 9.71324ZM11.4214 13.7589C11.2219 13.8374 11.0086 13.8753 10.7942 13.8705C10.3736 13.8609 9.97352 13.6876 9.67947 13.3876C9.38543 13.0875 9.22079 12.6846 9.22079 12.2651C9.22079 11.8455 9.38543 11.4426 9.67947 11.1426C9.97352 10.8426 10.3736 10.6692 10.7942 10.6597C11.0086 10.6548 11.2219 10.6928 11.4214 10.7712C11.621 10.8497 11.8028 10.9672 11.9562 11.1168C12.1096 11.2663 12.2315 11.4449 12.3147 11.6421C12.3979 11.8393 12.4408 12.0511 12.4408 12.2651C12.4408 12.479 12.3979 12.6908 12.3147 12.888C12.2315 13.0852 12.1096 13.2638 11.9562 13.4134C11.8028 13.5629 11.621 13.6804 11.4214 13.7589ZM20.3903 13.3945C20.0863 13.6976 19.674 13.868 19.2442 13.868C18.8143 13.868 18.402 13.6976 18.0981 13.3945C17.7941 13.0913 17.6233 12.6801 17.6233 12.2514C17.6233 11.8226 17.7941 11.4114 18.0981 11.1083C18.402 10.8051 18.8143 10.6348 19.2442 10.6348C19.674 10.6348 20.0863 10.8051 20.3903 11.1083C20.6942 11.4114 20.865 11.8226 20.865 12.2514C20.865 12.6801 20.6942 13.0913 20.3903 13.3945Z" fill="white"/>
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>             
+</footer>
+</body>
+</html>
